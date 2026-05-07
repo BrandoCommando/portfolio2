@@ -25,6 +25,7 @@ export const projects: Project[] = [
     tech: ["Shopify", "Node.js", "Next.js", "Headless Commerce"],
     gradient: "from-purple-500/20 to-pink-600/20",
     icon: "Code",
+    href: "https://store.brandonbowles.com",
   },
   {
     title: "Digital Whiteboard",
