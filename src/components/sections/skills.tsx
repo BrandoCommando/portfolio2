@@ -20,7 +20,7 @@ export function Skills() {
         <SectionHeading
           label="// skills"
           title="Tech Stack"
-          description="The tools and technologies I work with daily."
+          description="Languages, frameworks, and infrastructure used in production."
         />
 
         <div className="grid gap-6 md:grid-cols-3">

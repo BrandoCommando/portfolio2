@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import { GithubIcon, XIcon } from "@/components/ui/icons";
+import { GithubIcon, LinkedInIcon } from "@/components/ui/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -50,8 +50,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-4 text-5xl font-bold tracking-tight sm:text-7xl"
         >
-          Aaabad{" "}
-          <span className="gradient-text">Touk</span>
+          Brandon{" "}
+          <span className="gradient-text">Bowles</span>
         </motion.h1>
 
         {/* Handle */}
@@ -61,7 +61,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-6 font-mono text-sm text-muted-foreground"
         >
-          @aaabadcode
+          Senior Programmer
         </motion.p>
 
         {/* Tagline */}
@@ -71,8 +71,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground sm:text-xl"
         >
-          AI engineer building intelligent systems — from LLMs and computer
-          vision to production ML pipelines. Turning research into products.
+          Veteran full-stack architect with 15+ years in Node.js, PHP, and
+          Shopify engineering. Building secure, high-performance commerce
+          platforms with modern AI-assisted workflows.
         </motion.p>
 
         {/* CTAs */}
@@ -96,7 +97,7 @@ export function Hero() {
           </a>
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com/aaaby-code"
+              href="https://github.com/brandocommando"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -105,13 +106,13 @@ export function Hero() {
               <GithubIcon className="h-5 w-5" />
             </a>
             <a
-              href="https://x.com/aaabadcode"
+              href="https://www.linkedin.com/in/brandon-bowles-78a513266"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
+              aria-label="LinkedIn"
               className={buttonVariants({ variant: "ghost", size: "icon" })}
             >
-              <XIcon className="h-5 w-5" />
+              <LinkedInIcon className="h-5 w-5" />
             </a>
           </div>
         </motion.div>

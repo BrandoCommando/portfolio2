@@ -29,7 +29,7 @@ export function Projects() {
         <SectionHeading
           label="// projects"
           title="What I've Built"
-          description="A selection of AI-powered products and tools."
+          description="A selection of commerce and product engineering work."
         />
 
         <StaggerChildren className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

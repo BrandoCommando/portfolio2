@@ -15,20 +15,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aaabad Touk — AI Engineer",
+  title: "Brandon Bowles — Senior Programmer",
   description:
-    "Portfolio of Aaabad Touk (@aaabadcode) — AI engineer building intelligent systems, from LLMs to computer vision.",
+    "Portfolio of Brandon Bowles, a veteran full-stack architect specializing in Node.js, PHP, Shopify apps, and headless commerce.",
   openGraph: {
-    title: "Aaabad Touk — AI Engineer",
+    title: "Brandon Bowles — Senior Programmer",
     description:
-      "AI engineer building intelligent systems, from LLMs to computer vision.",
+      "Veteran full-stack architect specializing in Node.js, PHP, Shopify apps, and headless commerce.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aaabad Touk — AI Engineer",
+    title: "Brandon Bowles — Senior Programmer",
     description:
-      "AI engineer building intelligent systems, from LLMs to computer vision.",
+      "Veteran full-stack architect specializing in Node.js, PHP, Shopify apps, and headless commerce.",
     creator: "@aaabadcode",
   },
 };

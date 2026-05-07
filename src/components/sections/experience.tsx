@@ -14,7 +14,7 @@ export function Experience() {
         <SectionHeading
           label="// experience"
           title="Where I've Worked"
-          description="From open-source contributions to scaling AI at top companies."
+          description="Long-term ownership, modernization, and enterprise delivery."
         />
 
         <div className="relative">

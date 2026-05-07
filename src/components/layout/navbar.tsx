@@ -10,7 +10,6 @@ const links = [
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
-  { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -21,7 +20,7 @@ export function Navbar() {
     <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a href="#" className="font-mono text-sm font-bold tracking-wider">
-          <span className="gradient-text">aaabadcode</span>
+          <span className="gradient-text">brandonbowles</span>
         </a>
 
         {/* Desktop */}
@@ -35,6 +34,13 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://brandonbowles.com/resume"
+            rel="noopener noreferrer"
+            className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Resume
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -69,6 +75,14 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <a
+                href="https://brandonbowles.com/resume"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Resume
+              </a>
             </div>
           </motion.div>
         )}

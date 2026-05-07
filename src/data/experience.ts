@@ -8,35 +8,27 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    company: "DeepMind",
-    role: "Senior AI Research Engineer",
-    period: "2023 — Present",
+    company: "ReadingGlasses.com",
+    role: "Head of E-commerce Engineering",
+    period: "2011 — Present",
     description:
-      "Leading research on multi-modal foundation models. Built internal tooling for large-scale distributed training across TPU pods.",
-    tech: ["JAX", "TPU", "Transformers", "Python"],
+      "Sole developer responsible for full client support. Led a long-term re-platform to Shopify Plus and Node.js microservices, boosting page speed by 150% and reducing annual maintenance costs by over $500k.",
+    tech: ["Shopify Plus", "Node.js", "React", "Liquid", "GraphQL", "LAMP"],
   },
   {
-    company: "OpenAI",
-    role: "ML Platform Engineer",
-    period: "2021 — 2023",
+    company: "Celebros",
+    role: ".NET Programmer / DBA",
+    period: "2006 — 2011",
     description:
-      "Designed and scaled inference infrastructure for GPT models. Reduced latency by 40% through model optimization and caching strategies.",
-    tech: ["Python", "Kubernetes", "CUDA", "Redis"],
+      "Integrated diverse product data feeds into proprietary search systems, reverse-engineered frontends for seamless migration, and built enterprise internal tools for analytics and machine-learning initiatives.",
+    tech: [".NET", "MS SQL", "Data Integration", "Enterprise Apps", "Analytics"],
   },
   {
-    company: "Scale AI",
-    role: "Full-Stack ML Engineer",
-    period: "2020 — 2021",
+    company: "Chaparral Motorsports",
+    role: "Web Assistant",
+    period: "2005 — 2006",
     description:
-      "Built data labeling pipelines and quality assurance systems for computer vision datasets. Shipped annotation tools used by 5k+ labelers.",
-    tech: ["React", "Python", "FastAPI", "PostgreSQL"],
-  },
-  {
-    company: "Hugging Face",
-    role: "Open Source Engineer (Intern)",
-    period: "2019 — 2020",
-    description:
-      "Contributed to the Transformers library. Implemented model architectures and wrote documentation for community adoption.",
-    tech: ["PyTorch", "Transformers", "TypeScript", "Docker"],
+      "Started in data-entry and quickly built automation tooling that significantly increased team productivity for the web department.",
+    tech: ["Automation", "Web Operations", "Process Improvement"],
   },
 ];

@@ -1,4 +1,4 @@
-import { GithubIcon, XIcon } from "@/components/ui/icons";
+import { GithubIcon, LinkedInIcon } from "@/components/ui/icons";
 import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
@@ -6,11 +6,11 @@ export function Footer() {
     <footer className="border-t border-border/50">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-8 sm:flex-row sm:justify-between">
         <p className="font-mono text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} Aaabad Touk. All rights reserved.
+          &copy; {new Date().getFullYear()} Brandon Bowles. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/aaaby-code"
+            href="https://github.com/brandocommando"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -20,13 +20,13 @@ export function Footer() {
           </a>
           <Separator orientation="vertical" className="h-4" />
           <a
-            href="https://x.com/aaabadcode"
+            href="https://www.linkedin.com/in/brandon-bowles-78a513266"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="Twitter"
+            aria-label="LinkedIn"
           >
-            <XIcon className="h-4 w-4" />
+            <LinkedInIcon className="h-4 w-4" />
           </a>
         </div>
       </div>
