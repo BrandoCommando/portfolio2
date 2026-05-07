@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Brandon Bowles — Senior Programmer",
     description:
       "Veteran full-stack architect specializing in Node.js, PHP, Shopify apps, and headless commerce.",
-    creator: "@aaabadcode",
+    creator: "@brandocommando",
   },
 };
 
