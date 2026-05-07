@@ -4,6 +4,8 @@ export interface Project {
   tech: string[];
   gradient: string;
   icon: string;
+  /** External link (e.g. store listing, demo). */
+  href?: string;
 }
 
 export const projects: Project[] = [
@@ -14,6 +16,7 @@ export const projects: Project[] = [
     tech: ["Android", "Java", "Google APIs", "Jenkins", "Open Source"],
     gradient: "from-cyan-500/20 to-blue-600/20",
     icon: "Workflow",
+    href: "https://play.google.com/store/apps/details?id=org.brandroid.openmanager",
   },
   {
     title: "Brandon's Store",
@@ -30,5 +33,6 @@ export const projects: Project[] = [
     tech: ["Realtime Web", "Canvas", "Node.js", "Frontend Engineering"],
     gradient: "from-green-500/20 to-emerald-600/20",
     icon: "Image",
+    href: "https://board.brandonbowles.com",
   },
 ];

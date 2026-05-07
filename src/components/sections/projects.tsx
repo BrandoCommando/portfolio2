@@ -48,7 +48,20 @@ export function Projects() {
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-border/50 bg-background/50">
                         <Icon className="h-5 w-5 text-primary" />
                       </div>
-                      <h3 className="font-semibold text-lg">{project.title}</h3>
+                      <h3 className="font-semibold text-lg">
+                        {project.href ? (
+                          <a
+                            href={project.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-foreground underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
+                          >
+                            {project.title}
+                          </a>
+                        ) : (
+                          project.title
+                        )}
+                      </h3>
                     </div>
 
                     <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
