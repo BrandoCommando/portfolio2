@@ -130,6 +130,9 @@
   html {
     @apply font-sans scroll-smooth;
   }
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
 }
 
 /* Gradient mesh background */
