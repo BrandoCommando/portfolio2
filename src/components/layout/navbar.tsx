@@ -120,7 +120,9 @@ export function Navbar() {
           </div>
 
           <div className="ml-auto flex shrink-0 items-center gap-0.5 md:ml-0">
-            <ThemeToggle />
+            <div className="hidden md:block">
+              <ThemeToggle />
+            </div>
             <Button
               variant="ghost"
               size="icon"
@@ -161,6 +163,9 @@ export function Navbar() {
                 >
                   Résumé
                 </a>
+                <div className="flex justify-center border-t border-border/50 px-2 pt-2 pb-1">
+                  <ThemeToggle />
+                </div>
               </div>
             </motion.div>
           )}
