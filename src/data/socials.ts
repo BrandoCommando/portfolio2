@@ -12,7 +12,7 @@ export const socials: Social[] = [
   },
   {
     name: "Website",
-    url: "https://brandonbowles.com/resume",
+    url: "/resume",
     icon: "LinkedIn",
   },
   {

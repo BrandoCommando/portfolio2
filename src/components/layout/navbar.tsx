@@ -35,7 +35,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://brandonbowles.com/resume"
+            href="/resume"
             rel="noopener noreferrer"
             className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
@@ -76,7 +76,7 @@ export function Navbar() {
                 </a>
               ))}
               <a
-                href="https://brandonbowles.com/resume"
+                href="/resume"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
