@@ -28,10 +28,10 @@ export function Skills() {
             const Icon = iconMap[cat.icon] ?? Brain;
             return (
               <FadeIn key={cat.category} delay={catIndex * 0.15}>
-                <Card className="h-full border-border/50 bg-card/50 backdrop-blur-sm">
+                <Card className="h-full">
                   <CardContent className="p-6">
                     <div className="mb-6 flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-border/50 bg-background/50">
+                      <div className="glass-chip flex h-10 w-10 items-center justify-center rounded-xl">
                         <Icon className="h-5 w-5 text-primary" />
                       </div>
                       <h3 className="font-semibold">{cat.category}</h3>

@@ -18,7 +18,7 @@ export function Contact() {
         />
 
         <FadeIn>
-          <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+          <Card>
             <CardContent className="p-8 text-center">
               <div className="mb-8 space-y-4">
                 <a

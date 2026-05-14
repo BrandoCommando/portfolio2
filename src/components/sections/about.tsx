@@ -27,7 +27,7 @@ export function About() {
           {/* Image + Terminal */}
           <FadeIn direction="left">
             <div className="space-y-6">
-              <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow">
+              <div className="glass-surface relative overflow-hidden rounded-2xl">
                 <Image
                   src="https://images.unsplash.com/photo-1607706189992-eae578626c86?w=600&h=600&fit=crop&crop=center"
                   alt="Brandon Bowles"
@@ -39,7 +39,7 @@ export function About() {
               </div>
 
               {/* Terminal block */}
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+              <Card>
                 <CardContent className="p-4">
                   <div className="mb-3 flex items-center gap-2">
                     <div className="h-3 w-3 rounded-full bg-red-500/70" />
@@ -100,7 +100,7 @@ $ echo $STATUS
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
                   >
-                    <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+                    <Card>
                       <CardContent className="p-4 text-center">
                         <p className="text-2xl font-bold gradient-text">
                           {stat.value}

@@ -37,7 +37,7 @@ export function Projects() {
             const Icon = iconMap[project.icon] ?? Code;
             return (
               <motion.div key={project.title} variants={staggerItem}>
-                <Card className="group relative h-full overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/30 hover:neon-glow">
+                <Card className="group relative h-full overflow-hidden transition-all duration-300 glass-hover-lift">
                   {/* Gradient accent */}
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
@@ -45,7 +45,7 @@ export function Projects() {
 
                   <CardContent className="relative p-6">
                     <div className="mb-4 flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-border/50 bg-background/50">
+                      <div className="glass-chip flex h-10 w-10 items-center justify-center rounded-xl">
                         <Icon className="h-5 w-5 text-primary" />
                       </div>
                       <h3 className="font-semibold text-lg">

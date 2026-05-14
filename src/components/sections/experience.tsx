@@ -46,7 +46,7 @@ export function Experience() {
 
                 {/* Card */}
                 <div className="md:w-[calc(50%-2rem)]">
-                  <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+                  <Card>
                     <CardContent className="p-6">
                       <div className="mb-2 flex items-center gap-2">
                         <Briefcase className="h-4 w-4 text-primary" />

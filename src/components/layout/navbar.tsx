@@ -20,8 +20,8 @@ function linkPillClass(active: boolean) {
   return cn(
     "rounded-full px-2.5 py-1 text-xs font-medium transition-colors",
     active
-      ? "bg-muted text-foreground shadow-sm"
-      : "text-muted-foreground hover:bg-muted/60 hover:text-foreground",
+      ? "glass-nav-pill-active text-foreground"
+      : "text-muted-foreground hover:bg-black/[0.06] hover:text-foreground dark:hover:bg-white/[0.08]",
   );
 }
 
@@ -92,7 +92,7 @@ export function Navbar() {
   return (
     <header className="pointer-events-none fixed inset-x-0 top-3 z-50 flex justify-center px-3 sm:top-4 sm:px-4">
       <div className="pointer-events-auto w-max max-w-[calc(100vw-1.5rem)]">
-        <nav className="flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 py-1.5 pl-2 pr-1.5 shadow-lg backdrop-blur-xl sm:gap-2 sm:pl-3">
+        <nav className="glass-pill flex items-center gap-1.5 rounded-full py-1.5 pl-2 pr-1.5 sm:gap-2 sm:pl-3">
           <a
             href="#"
             className="shrink-0 whitespace-nowrap pl-1 font-mono text-[11px] font-bold tracking-wide sm:text-xs"
@@ -140,7 +140,7 @@ export function Navbar() {
               animate={{ opacity: 1, y: 0, height: "auto" }}
               exit={{ opacity: 0, y: -6, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="mt-1.5 overflow-hidden rounded-2xl border border-border/60 bg-background/90 shadow-lg backdrop-blur-xl md:hidden"
+              className="glass-sheet mt-1.5 overflow-hidden rounded-2xl md:hidden"
             >
               <div className="flex flex-col gap-0.5 p-2">
                 {links.map((link) => (

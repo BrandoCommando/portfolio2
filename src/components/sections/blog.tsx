@@ -21,7 +21,7 @@ export function Blog() {
         <StaggerChildren className="grid gap-6 md:grid-cols-2">
           {blogPosts.map((post) => (
             <motion.div key={post.title} variants={staggerItem}>
-              <Card className="group h-full cursor-pointer border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/30">
+              <Card className="group h-full cursor-pointer transition-all duration-300 glass-hover-lift">
                 <CardContent className="p-6">
                   <div className="mb-4 flex items-center justify-between">
                     <Badge

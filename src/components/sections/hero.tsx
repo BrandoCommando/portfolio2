@@ -19,7 +19,7 @@ export function Hero() {
           className="object-cover opacity-15"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/25 via-background/70 to-background" />
       </div>
 
       {/* Gradient orbs */}
@@ -34,7 +34,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-border/50 bg-secondary/50 px-4 py-1.5 text-sm backdrop-blur-sm"
+          className="mb-8 inline-flex items-center gap-2 rounded-full glass-chip px-4 py-1.5 text-sm"
         >
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
