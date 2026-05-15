@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "portfolio",
+  "name": "portfolio2",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-05-15",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
@@ -11,10 +11,13 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "portfolio"
+      "service": "portfolio2"
     }
   ],
   "images": {
     "binding": "IMAGES"
+  },
+  "observability": {
+    "enabled": true
   }
 }
