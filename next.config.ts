@@ -9,6 +9,17 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  turbopack: {
+    rules: {
+      "*.html": {
+        loaders: ["raw-loader"],
+        as: "*.js",
+      },
+    },
+  },
 };
 
 export default nextConfig;
+
+if(!process.env.VERCEL)
+  import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
