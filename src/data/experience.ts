@@ -44,20 +44,20 @@ export const experiences: Experience[] = [
     showOnResume: false,
   },
   {
-    company: "Conglomerates Intl LLC",
-    role: "Software Engineer",
-    period: "2011",
-    description: "Developed streaming video authentication system using Flash and HTML5.",
-    tech: ["Flash", "HTML5", "JavaScript", "PHP", "MySQL"],
-    showOnResume: false,
-  },
-  {
     company: "Phillips",
     role: "Website Developer (Contract)",
     period: "2010",
     description:
       "Developed and maintained website for new concept of hand dryers.",
     tech: ["Angular", "PHP", "JavaScript", "CSS", "HTML"],
+    showOnResume: false,
+  },
+  {
+    company: "Conglomerate Marketing LLC",
+    role: "Software Engineer",
+    period: "2009",
+    description: "Developed streaming video authentication system using Flash and HTML5.",
+    tech: ["Flash", "HTML5", "JavaScript", "PHP", "MySQL"],
     showOnResume: false,
   },
   {
@@ -77,6 +77,14 @@ export const experiences: Experience[] = [
       "Started in data-entry and quickly built automation tooling that significantly increased team productivity for the web department.",
     tech: ["Automation", "Web Operations", "Process Improvement"],
     showOnResume: true,
+  },
+  {
+    company: "Camp Oakhurst",
+    role: "Information Systems Coordinator",
+    "period": "2004 - 2005",
+    description: "Managed the information systems for the camp, including the website, calendar planning, and other systems.",
+    tech: ["Windows Server", "Active Directory", "Group Policy", "DHCP", "DNS", "VPN", "Flash", "HTML"],
+    showOnResume: false,
   },
   {
     company: "Target",
