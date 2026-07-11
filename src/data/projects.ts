@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: "Brandon's Store",
     description:
       "Headless Shopify storefront combining a Node.js backend and Next.js frontend. Focused on modern architecture and performance for flexible e-commerce experiences.",
-    tech: ["Shopify", "Node.js", "Next.js", "Headless Commerce"],
+    tech: ["Shopify", "Next.js", "Headless Commerce"],
     gradient: "from-purple-500/20 to-pink-600/20",
     icon: "Code",
     href: "https://store.brandonbowles.com",
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: "Digital Whiteboard",
     description:
       "Realtime collaborative drawing canvas built for low-latency updates and a smooth user experience across devices.",
-    tech: ["Realtime Web", "Canvas", "Node.js", "Frontend Engineering"],
+    tech: ["Cloudflare D1", "Cloudflare Workers", "Canvas", "Next.js"],
     gradient: "from-green-500/20 to-emerald-600/20",
     icon: "Image",
     href: "https://board.brandonbowles.com",
