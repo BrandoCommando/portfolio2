@@ -19,7 +19,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "C++ (Embedded)", level: 80 },
       { name: "C#", level: 70 },
       { name: "Java", level: 70 },
-      { name: "Rust", level: 20 },
+      { name: "Rust", level: 40 },
     ],
   },
   {

@@ -58,14 +58,14 @@ export function Experience() {
                       <p className="mb-3 text-sm text-muted-foreground">
                         {exp.role}
                       </p>
-                      <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                        {exp.description}
-                      </p>
+                      <p className="mb-4 text-sm leading-relaxed text-muted-foreground" dangerouslySetInnerHTML={{ __html: exp.description }} />
+                      {exp.tech && (
                       <div className="flex flex-wrap gap-2">
                         {exp.tech.map((t) => (
                           <TechBadge key={t}>{t}</TechBadge>
                         ))}
                       </div>
+                      )}
                     </CardContent>
                   </Card>
                 </div>

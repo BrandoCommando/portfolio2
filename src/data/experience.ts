@@ -3,7 +3,7 @@ export interface Experience {
   role: string;
   period: string;
   description: string;
-  tech: string[];
+  tech?: string[];
   showOnResume?: boolean;
 }
 
@@ -13,8 +13,8 @@ export const experiences: Experience[] = [
     role: "Engineering Consultant",
     period: "2026",
     description:
-      "Designed computer vision system to help FedEx package handlers, using YOLO model training to identify objects in real-time video streams. Built simulation model to visualize potential productivity improvements.",
-    tech: ["Python", "AI", "Machine Learning", "YOLO", "SimPy", "PyTorch", "OpenCV"],
+      "Designed computer vision system to help FedEx package handlers, using YOLO model training to identify objects in real-time video streams. <a href=\"https://github.com/BrandoCommando/rustpackagesim\">Built simulation model</a> to visualize potential productivity improvements.",
+    tech: ["Rust", "AI", "Machine Learning", "Python", "YOLO", "SimPy", "PyTorch", "OpenCV"],
     showOnResume: false,
   },
   {
@@ -75,7 +75,7 @@ export const experiences: Experience[] = [
     period: "2005 — 2006",
     description:
       "Started in data-entry and quickly built automation tooling that significantly increased team productivity for the web department.",
-    tech: ["Automation", "Web Operations", "Process Improvement"],
+    tech: ["Web Operations", "Opera JS"],
     showOnResume: true,
   },
   {

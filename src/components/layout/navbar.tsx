@@ -10,9 +10,9 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { label: "About", href: "#about", id: "about" },
+  { label: "Experience", href: "#experience", id: "experience" },
   { label: "Projects", href: "#projects", id: "projects" },
   { label: "Skills", href: "#skills", id: "skills" },
-  { label: "Work", href: "#experience", id: "experience" },
   { label: "Contact", href: "#contact", id: "contact" },
 ] as const;
 
