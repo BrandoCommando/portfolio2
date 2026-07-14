@@ -58,7 +58,10 @@ export function Experience() {
                       <p className="mb-3 text-sm text-muted-foreground">
                         {exp.role}
                       </p>
-                      <p className="mb-4 text-sm leading-relaxed text-muted-foreground" dangerouslySetInnerHTML={{ __html: exp.description }} />
+                      <p
+                        className="mb-4 text-sm leading-relaxed text-muted-foreground [&_a]:underline [&_a]:underline-offset-4"
+                        dangerouslySetInnerHTML={{ __html: exp.description }}
+                      />
                       {exp.tech && (
                       <div className="flex flex-wrap gap-2">
                         {exp.tech.map((t) => (
