@@ -19,7 +19,7 @@ export function About() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           label="// about"
-          title="Full-Stack Commerce Engineer"
+          title="Full-Stack Engineer"
           description="Performance, reliability, and maintainable systems that ship."
         />
 

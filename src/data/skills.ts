@@ -39,8 +39,8 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Node/Express.js / React", years: "2022-26", rating: 9 },
       { name: ".NET Framework", years: "2006-11", rating: 8 },
-      { name: "JDK", years: "2003-05", rating: 5, showOnPortfolio: false },
-      { name: "Gradle / Kotlin", years: "2012-14", rating: 7, showOnPortfolio: false },
+      { name: "JDK", years: "2003-05", rating: 5, showOnPortfolio: true },
+      { name: "Gradle / Kotlin", years: "2012-14", rating: 7, showOnPortfolio: true },
       { name: "Liquid", years: "2022-26", rating: 10 },
       { name: "Angular", years: "2026", rating: 5 },
     ],
