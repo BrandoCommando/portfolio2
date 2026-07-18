@@ -24,17 +24,23 @@ export const experiences: Experience[] = [
     description:
       "Designed computer vision system to help FedEx package handlers, using YOLO model training to identify objects in real-time video streams. <a href=\"https://github.com/BrandoCommando/rustpackagesim\">Built simulation model</a> to visualize potential productivity improvements.",
     tech: ["Rust", "AI", "Machine Learning", "Python", "YOLO", "SimPy", "PyTorch", "OpenCV"],
-    showOnResume: false,
+    showOnResume: true,
+    resumePeriod: "2026",
+    location: "Ventura, CA",
+    resumeBullets: [
+      "Designed computer vision system to help package handlers, using <strong>YOLO</strong> model training to identify objects in real-time video streams.",
+      "<a href=\"https://github.com/BrandoCommando/rustpackagesim\">Built simulation model</a> using <strong>Rust</strong> to visualize potential productivity improvements.",
+    ],
   },
   {
     company: "ReadingGlasses.com",
     role: "Head of E-commerce Engineering",
     period: "2011 — 2026",
-    resumePeriod: "2011 - PRESENT",
+    resumePeriod: "2011 - 2026",
     location: "Dallas, TX",
     description:
       "Sole developer responsible for full client support. Led a long-term re-platform to Shopify Plus and Node.js microservices, boosting page speed by 150% and reducing annual maintenance costs by over $500k.",
-    tech: ["Shopify Plus", "Node.js", "React", "Liquid", "GraphQL", "LAMP"],
+    tech: ["Shopify Plus", "Node.js", "React", "Liquid", "GraphQL", "LAMP", "Angular", "PHP", "MySQL"],
     showOnResume: true,
     resumeBullets: [
       "Replaced overseas development team as <strong>sole developer</strong>, providing 100% support to client",

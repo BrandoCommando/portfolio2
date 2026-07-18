@@ -1,5 +1,7 @@
-import { GithubIcon, LinkedInIcon } from "@/components/ui/icons";
+import { SocialIcon } from "@/components/ui/icons";
 import { Separator } from "@/components/ui/separator";
+import { socials } from "@/data/socials";
+import { Fragment } from "react";
 
 export function Footer() {
   return (
@@ -9,25 +11,22 @@ export function Footer() {
           &copy; {new Date().getFullYear()} Brandon Bowles. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
-          <a
-            href="https://github.com/brandocommando"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="GitHub"
-          >
-            <GithubIcon className="h-4 w-4" />
-          </a>
-          <Separator orientation="vertical" className="h-4" />
-          <a
-            href="https://www.linkedin.com/in/brandon-bowles-78a513266"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="LinkedIn"
-          >
-            <LinkedInIcon className="h-4 w-4" />
-          </a>
+          {socials.map((social, index) => (
+            <Fragment key={social.id}>
+              {index > 0 && (
+                <Separator orientation="vertical" className="h-4" />
+              )}
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+                aria-label={social.name}
+              >
+                <SocialIcon name={social.icon} className="h-4 w-4" />
+              </a>
+            </Fragment>
+          ))}
         </div>
       </div>
     </footer>

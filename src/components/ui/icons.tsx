@@ -1,4 +1,5 @@
 import { type SVGProps } from "react";
+import type { SocialIconName } from "@/data/socials";
 
 export function GithubIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -22,4 +23,26 @@ export function LinkedInIcon(props: SVGProps<SVGSVGElement>) {
       <path d="M20.447 20.452h-3.554v-5.569c0-1.329-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.048c.477-.9 1.637-1.85 3.369-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.063 2.063 0 1 1 0-4.126 2.063 2.063 0 0 1 0 4.126zM7.119 20.452H3.555V9h3.564v11.452z" />
     </svg>
   );
+}
+
+export function ThingiverseIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M11.955.005C5.425-.152-.091 5.485.007 11.805c-.235 6.756 5.537 12.25 12.052 12.196C18.621 23.9 23.912 18.595 24 12.03 24.031 5.483 18.505-.18 11.955.005zm-.047 1.701a10.276 10.276 0 0 1 7.36 17.529 10.275 10.275 0 0 1-17.556-7.287C1.71 6.308 6.268 1.728 11.907 1.706zm-5.55 4.781c-.322 0-.358.033-.358.361v2.248c0 .351.04.391.398.391h3.823c.274 0 .274.004.274.265v9.736a.176.176 0 0 0 .051.146c.04.038.093.059.148.053h2.555c.247-.003.283-.035.283-.28v-9.32c0-.124.004-.239 0-.39s.055-.21.218-.21h3.9c.319.004.35-.032.35-.344V6.855c0-.34-.024-.363-.37-.363h-5.626z" />
+    </svg>
+  );
+}
+
+const socialIconMap = {
+  Github: GithubIcon,
+  LinkedIn: LinkedInIcon,
+  Thingiverse: ThingiverseIcon,
+} as const satisfies Record<SocialIconName, typeof GithubIcon>;
+
+export function SocialIcon({
+  name,
+  ...props
+}: { name: SocialIconName } & SVGProps<SVGSVGElement>) {
+  const Icon = socialIconMap[name];
+  return <Icon {...props} />;
 }

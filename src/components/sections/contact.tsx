@@ -1,11 +1,12 @@
 "use client";
 
 import { Mail, ArrowUpRight } from "lucide-react";
-import { GithubIcon, LinkedInIcon } from "@/components/ui/icons";
+import { SocialIcon } from "@/components/ui/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { FadeIn } from "@/components/motion/fade-in";
+import { socials } from "@/data/socials";
 
 export function Contact() {
   return (
@@ -32,24 +33,18 @@ export function Contact() {
               </div>
 
               <div className="flex justify-center gap-4">
-                <a
-                  href="https://github.com/brandocommando"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={buttonVariants({ variant: "outline", size: "lg" })}
-                >
-                  <GithubIcon className="mr-2 h-4 w-4" />
-                  GitHub
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/brandon-bowles-78a513266"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={buttonVariants({ variant: "outline", size: "lg" })}
-                >
-                  <LinkedInIcon className="mr-2 h-4 w-4" />
-                  LinkedIn
-                </a>
+                {socials.map((social) => (
+                  <a
+                    key={social.id}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={buttonVariants({ variant: "outline", size: "lg" })}
+                  >
+                    <SocialIcon name={social.icon} className="mr-2 h-4 w-4" />
+                    {social.name}
+                  </a>
+                ))}
               </div>
             </CardContent>
           </Card>

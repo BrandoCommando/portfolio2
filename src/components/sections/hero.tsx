@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import { GithubIcon, LinkedInIcon } from "@/components/ui/icons";
+import { SocialIcon } from "@/components/ui/icons";
 import { buttonVariants } from "@/components/ui/button";
+import { socials } from "@/data/socials";
 import { cn } from "@/lib/utils";
 
 export function Hero() {
@@ -96,24 +97,18 @@ export function Hero() {
             Get in Touch
           </a>
           <div className="flex items-center gap-2">
-            <a
-              href="https://github.com/brandocommando"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className={buttonVariants({ variant: "ghost", size: "icon" })}
-            >
-              <GithubIcon className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/brandon-bowles-78a513266"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className={buttonVariants({ variant: "ghost", size: "icon" })}
-            >
-              <LinkedInIcon className="h-5 w-5" />
-            </a>
+            {socials.map((social) => (
+              <a
+                key={social.id}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className={buttonVariants({ variant: "ghost", size: "icon" })}
+              >
+                <SocialIcon name={social.icon} className="h-5 w-5" />
+              </a>
+            ))}
           </div>
         </motion.div>
 

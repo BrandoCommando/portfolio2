@@ -1,3 +1,5 @@
+import { getSocial } from "@/data/socials";
+
 export interface ResumeContact {
   name: string;
   title: string;
@@ -15,6 +17,9 @@ export interface ResumeEducation {
   title: string;
 }
 
+const github = getSocial("github");
+const linkedin = getSocial("linkedin");
+
 export const resumeContact: ResumeContact = {
   name: "Brandon Bowles",
   title: "Senior Programmer",
@@ -23,14 +28,14 @@ export const resumeContact: ResumeContact = {
   phoneHref: "tel:805-232-1612",
   email: "BrandonBowles@gmail.com",
   linkedin: {
-    label: "LinkedIn",
-    url: "https://www.linkedin.com/in/brandon-bowles-78a513266",
-    printLabel: "linkedin.com/in/brandon-bowles-78a513266",
+    label: linkedin.name,
+    url: linkedin.url,
+    printLabel: linkedin.printLabel,
   },
   github: {
-    label: "Github",
-    url: "https://github.com/brandocommando",
-    printLabel: "github.com/brandocommando",
+    label: github.name,
+    url: github.url,
+    printLabel: github.printLabel,
   },
   portfolio: {
     label: "Portfolio",
