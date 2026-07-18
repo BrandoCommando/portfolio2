@@ -4,10 +4,9 @@ import {
   gaTrackingId,
   resumeContact,
   resumeEducation,
-  resumeSkillCategories,
   resumeSummary,
-  type ResumeSkill,
 } from "@/data/resume";
+import { getResumeSkillCategories, type Skill } from "@/data/skills";
 
 const RESUME_CSS = `@media (min-width: 768px) {
   .fleft { float: left; max-width: 4.5in; }
@@ -87,8 +86,8 @@ function escapeText(value: string): string {
     .replaceAll(">", "&gt;");
 }
 
-function formatSkill(skill: ResumeSkill): string {
-  if (skill.years == null || skill.rating == null) {
+function formatSkill(skill: Skill): string {
+  if (skill.years == null) {
     return escapeText(skill.name);
   }
   return `${escapeText(skill.name)} <small>(${escapeText(skill.years)}, <sup>${skill.rating}</sup>/<sub>10</sub>)</small>`;
@@ -125,7 +124,7 @@ export function buildResumeHtml(): string {
   const jobs = experiences.filter((e) => e.showOnResume);
   const resumeProjects = projects.filter((p) => p.showOnResume);
 
-  const skillsHtml = resumeSkillCategories
+  const skillsHtml = getResumeSkillCategories()
     .map(
       (cat) => `<ul><li><strong>${escapeText(cat.title)}</strong></li>
 ${cat.skills.map((s) => `<li>${formatSkill(s)}</li>`).join("\n")}

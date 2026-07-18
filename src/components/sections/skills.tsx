@@ -1,19 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Globe, Server } from "lucide-react";
+import { Brain, Globe, Monitor, Server, Store, Terminal } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { FadeIn } from "@/components/motion/fade-in";
-import { skillCategories } from "@/data/skills";
+import { getPortfolioSkillCategories } from "@/data/skills";
 
 const iconMap: Record<string, React.ElementType> = {
   Brain,
   Globe,
   Server,
+  Monitor,
+  Store,
+  Terminal,
 };
 
 export function Skills() {
+  const skillCategories = getPortfolioSkillCategories();
+
   return (
     <section id="skills" className="py-32 px-6">
       <div className="mx-auto max-w-6xl">
