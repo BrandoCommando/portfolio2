@@ -1,12 +1,52 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { SocialIcon } from "@/components/ui/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { socials } from "@/data/socials";
 import { cn } from "@/lib/utils";
+
+const TITLES = [
+  "Senior Programmer",
+  "Software Developer",
+  "AI-assisted Architect",
+  "3D Printing Engineer",
+  "Robot Builder",
+  "Maker of Anything",
+] as const;
+
+const TITLE_INTERVAL_MS = 2800;
+
+function RotatingTitle() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      setIndex((i) => (i + 1) % TITLES.length);
+    }, TITLE_INTERVAL_MS);
+    return () => window.clearInterval(id);
+  }, []);
+
+  return (
+    <span className="relative inline-flex h-[1.25em] items-center justify-center overflow-hidden">
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.span
+          key={TITLES[index]}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -12 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
+          className="inline-block"
+        >
+          {TITLES[index]}
+        </motion.span>
+      </AnimatePresence>
+    </span>
+  );
+}
 
 export function Hero() {
   return (
@@ -61,8 +101,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-6 font-mono text-sm text-muted-foreground"
+          aria-live="polite"
         >
-          Senior Programmer
+          <RotatingTitle />
         </motion.p>
 
         {/* Tagline */}
