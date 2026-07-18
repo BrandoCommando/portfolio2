@@ -4,7 +4,16 @@ export interface Experience {
   period: string;
   description: string;
   tech?: string[];
+  /** When true, included in the dynamically generated /resume page. */
   showOnResume?: boolean;
+  /** City/region shown on the resume (e.g. "Dallas, TX"). */
+  location?: string;
+  /** Period label override for resume (e.g. "2011 - PRESENT"). */
+  resumePeriod?: string;
+  /** Optional intro paragraph before resume bullets. */
+  resumeIntro?: string;
+  /** HTML allowed for emphasis (<strong>, etc.). */
+  resumeBullets?: string[];
 }
 
 export const experiences: Experience[] = [
@@ -21,10 +30,22 @@ export const experiences: Experience[] = [
     company: "ReadingGlasses.com",
     role: "Head of E-commerce Engineering",
     period: "2011 — 2026",
+    resumePeriod: "2011 - PRESENT",
+    location: "Dallas, TX",
     description:
       "Sole developer responsible for full client support. Led a long-term re-platform to Shopify Plus and Node.js microservices, boosting page speed by 150% and reducing annual maintenance costs by over $500k.",
     tech: ["Shopify Plus", "Node.js", "React", "Liquid", "GraphQL", "LAMP"],
     showOnResume: true,
+    resumeBullets: [
+      "Replaced overseas development team as <strong>sole developer</strong>, providing 100% support to client",
+      "Led agile development on multi-year re-platform onto <strong>Shopify Plus</strong>/microservice backend, resulting in a page <strong>speed boost</strong> of 150% (all green) and an anual maintenance <strong>savings</strong> of over $500k.",
+      "Shopify <strong>custom app</strong> development (with Node.js microservices and React admin).",
+      "GraphQL based data feed generation, advanced liquid theming.",
+      "<strong>Modernized</strong> UX (Social Login, hashed password authentication, Bootstrap).",
+      "Supporting legacy backend based on <strong>LAMP</strong> stack.",
+      "Used Atlassian Pipelines to implement <strong>automation</strong> of common tasks to reduce time-consuming repetition.",
+      "Publish automation based on SCM (Bitbucket/git).",
+    ],
   },
   {
     company: "Bundil",
@@ -64,24 +85,37 @@ export const experiences: Experience[] = [
     company: "Celebros",
     role: ".NET Programmer / DBA",
     period: "2006 — 2011",
+    resumePeriod: "2006 - 2011",
+    location: "Santa Barbara, CA",
     description:
       "Integrated diverse product data feeds into proprietary search systems, reverse-engineered frontends for seamless migration, and built enterprise internal tools for analytics and machine-learning initiatives.",
     tech: [".NET", "MS SQL", "Windows Server", "Data Integration", "Enterprise Apps", "Analytics", "Machine Learning"],
     showOnResume: true,
+    resumeBullets: [
+      "Integration of many different client product data feeds into proprietary search software",
+      "<strong>Reverse engineered</strong> frontends to enable seemless transition onto search results.",
+      "Created several <strong>enterprise applications</strong> which enabled many new tools, including <strong>machine learning</strong> and advanced analytics gathering.",
+    ],
   },
   {
     company: "Chaparral Motorsports",
     role: "Web Assistant",
     period: "2005 — 2006",
+    resumePeriod: "2005 - 2006",
+    location: "San Bernardino, CA",
     description:
       "Started in data-entry and quickly built automation tooling that significantly increased team productivity for the web department.",
     tech: ["Web Operations", "Opera JS"],
     showOnResume: true,
+    resumeIntro: "Began work on data-entry for web team, but soon grew bored.",
+    resumeBullets: [
+      "Built automation tool to greatly improve web team&rsquo;s productivity.",
+    ],
   },
   {
     company: "Camp Oakhurst",
     role: "Information Systems Coordinator",
-    "period": "2004 - 2005",
+    period: "2004 - 2005",
     description: "Managed the information systems for the camp, including the website, calendar planning, and other systems.",
     tech: ["Windows Server", "Active Directory", "Group Policy", "DHCP", "DNS", "VPN", "Flash", "HTML"],
     showOnResume: false,
@@ -102,5 +136,5 @@ export const experiences: Experience[] = [
       "Provider AutoCAD drafting services for Santa Margarita Water District. Built custom software to help automate redundancies inthe drafting process.",
     tech: ["AutoCAD", "AutoLISP"],
     showOnResume: false,
-  }
+  },
 ];
