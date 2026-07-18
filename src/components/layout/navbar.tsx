@@ -55,12 +55,34 @@ export function Navbar() {
       return () => window.removeEventListener("hashchange", syncHash);
     }
 
+    // Track every section across callbacks — IO only reports entries that
+    // changed, so ranking within a single batch misses tall sections like
+    // Experience (tiny intersectionRatio vs shorter neighbors).
+    const intersecting = new Map<string, IntersectionObserverEntry>();
+
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        const id = visible?.target.id;
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            intersecting.set(entry.target.id, entry);
+          } else {
+            intersecting.delete(entry.target.id);
+          }
+        }
+
+        let best: IntersectionObserverEntry | null = null;
+        for (const entry of intersecting.values()) {
+          // Prefer largest visible slice of the observation band, not ratio
+          // (ratio penalizes tall sections whose area dwarfs the band).
+          if (
+            !best ||
+            entry.intersectionRect.height > best.intersectionRect.height
+          ) {
+            best = entry;
+          }
+        }
+
+        const id = best?.target.id;
         if (id && sectionIds.includes(id as (typeof links)[number]["id"])) {
           setActiveId(id);
         }
