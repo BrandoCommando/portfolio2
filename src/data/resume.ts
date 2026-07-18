@@ -20,9 +20,18 @@ export interface ResumeEducation {
 const github = getSocial("github");
 const linkedin = getSocial("linkedin");
 
+export const titles = [
+  "Senior Programmer",
+  "Software Developer",
+  "AI-assisted Architect",
+  "3D Printing Engineer",
+  "Robot Builder",
+  "Maker of Anything",
+] as const;
+
 export const resumeContact: ResumeContact = {
   name: "Brandon Bowles",
-  title: "Senior Programmer",
+  title: titles[0],
   location: "Ventura, CA, USA",
   phone: "(805) 232-1612",
   phoneHref: "tel:805-232-1612",

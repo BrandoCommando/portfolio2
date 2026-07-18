@@ -6,17 +6,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { SocialIcon } from "@/components/ui/icons";
 import { buttonVariants } from "@/components/ui/button";
+import { titles } from "@/data/resume";
 import { socials } from "@/data/socials";
 import { cn } from "@/lib/utils";
-
-const TITLES = [
-  "Senior Programmer",
-  "Software Developer",
-  "AI-assisted Architect",
-  "3D Printing Engineer",
-  "Robot Builder",
-  "Maker of Anything",
-] as const;
 
 const TITLE_INTERVAL_MS = 2800;
 
@@ -25,7 +17,7 @@ function RotatingTitle() {
 
   useEffect(() => {
     const id = window.setInterval(() => {
-      setIndex((i) => (i + 1) % TITLES.length);
+      setIndex((i) => (i + 1) % titles.length);
     }, TITLE_INTERVAL_MS);
     return () => window.clearInterval(id);
   }, []);
@@ -34,14 +26,14 @@ function RotatingTitle() {
     <span className="relative inline-flex h-[1.25em] items-center justify-center overflow-hidden">
       <AnimatePresence mode="wait" initial={false}>
         <motion.span
-          key={TITLES[index]}
+          key={titles[index]}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -12 }}
           transition={{ duration: 0.35, ease: "easeOut" }}
           className="inline-block"
         >
-          {TITLES[index]}
+          {titles[index]}
         </motion.span>
       </AnimatePresence>
     </span>
