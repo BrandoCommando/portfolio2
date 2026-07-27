@@ -80,6 +80,16 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    title: "Workflows",
+    icon: "Brain",
+    skills: [
+      { name: "Git", years: "2010-26", rating: 10 },
+      { name: "CI/CD", years: "2018-26", rating: 7 },
+      { name: "DevOps", years: "2021-26", rating: 7 },
+      { name: "Agile", years: "2021-26", rating: 9 },
+    ],
+  },
+  {
     title: "Scripting/Automation/AI",
     portfolioTitle: "Automation & AI",
     icon: "Terminal",
