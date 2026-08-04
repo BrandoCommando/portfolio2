@@ -18,6 +18,19 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    company: "USPS",
+    role: "Carrier",
+    period: "2026",
+    description: "Worked as a carrier for the USPS.",
+    tech: ["Driving", "Delivery", "Customer Service", "Scanning", "Sorting"],
+    showOnResume: true,
+    resumePeriod: "2026",
+    location: "Santa Paula, CA",
+    resumeBullets: [
+      "Worked as a carrier for the USPS. Driving a delivery truck and delivering mail/packages to customers.",
+    ],
+  },
+  {
     company: "FedEx",
     role: "Engineering Consultant",
     period: "2026",
@@ -28,6 +41,7 @@ export const experiences: Experience[] = [
     resumePeriod: "2026",
     location: "Ventura, CA",
     resumeBullets: [
+      "Loaded packages onto FedEx trucks, maintaining route accuracy and efficiency.",
       "Designed computer vision system to help package handlers, using <strong>YOLO</strong> model training to identify objects in real-time video streams.",
       "<a href=\"https://github.com/BrandoCommando/rustpackagesim\">Built simulation model</a> using <strong>Rust</strong> to visualize potential productivity improvements.",
     ],
