@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
     resumePeriod: "June - July 2026",
     location: "Santa Paula, CA",
     resumeBullets: [
-      "Worked as a carrier for the USPS. Driving a delivery truck and delivering mail/packages to customers.",
+      "Worked as a carrier for the USPS. Driving a delivery truck and delivering letters/parcels.",
     ],
   },
   {
@@ -140,8 +140,8 @@ export const experiences: Experience[] = [
       "Started in data-entry and quickly built automation tooling that significantly increased team productivity for the web department.",
     tech: ["Web Operations", "Opera JS"],
     showOnResume: true,
-    resumeIntro: "Began work on data-entry for web team, but soon grew bored.",
     resumeBullets: [
+      "Began work on data-entry for web team, but soon grew bored.",
       "Built automation tool to greatly improve web team&rsquo;s productivity.",
     ],
   },
