@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
     description: "Assisted development of Tax Software upgrades.",
     tech: ["Perl", "Rust"],
     showOnResume: true,
-    resumePeriod: "August 2026 - Current",
+    resumePeriod: "Aug 2026 - Now",
     location: "Ventura, CA",
     resumeBullets: [
       "Assisted development of tax software upgrades.",
@@ -52,7 +52,7 @@ export const experiences: Experience[] = [
       "Designed computer vision system to help FedEx package handlers, using YOLO model training to identify objects in real-time video streams. <a href=\"https://github.com/BrandoCommando/rustpackagesim\">Built simulation model</a> to visualize potential productivity improvements.",
     tech: ["Rust", "AI", "Machine Learning", "Python", "YOLO", "SimPy", "PyTorch", "OpenCV"],
     showOnResume: true,
-    resumePeriod: "2026",
+    resumePeriod: "May 2026",
     location: "Ventura, CA",
     resumeBullets: [
       "Loaded packages onto FedEx trucks, maintaining route accuracy and efficiency.",
