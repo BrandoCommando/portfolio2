@@ -30,7 +30,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "C#", years: "2009-12", rating: 7 },
       { name: "Java", years: "2003-15", rating: 7 },
       { name: "Python", years: "2015-26", rating: 5 },
-      { name: "Rust", years: "2026", rating: 4 },
+      { name: "Rust", years: "2026", rating: 5 },
+      { name: "Perl", years: "2026", rating: 4 }
     ],
   },
   {

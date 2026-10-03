@@ -21,14 +21,13 @@ export const experiences: Experience[] = [
     company: "FileYourTaxes.com",
     role: "QA / Development",
     period: "2026",
-    description: "Assisted development of Tax Software upgrades.",
-    tech: ["Perl", "Rust"],
+    description: "Assisted development of FinTech software upgrades.",
+    tech: ["Perl", "Rust", "FinTech"],
     showOnResume: true,
     resumePeriod: "Aug 2026 - Now",
     location: "Ventura, CA",
     resumeBullets: [
-      "Assisted development of tax software upgrades.",
-      "Found bugs and fixed them.",
+      "Supported legacy software stack with various financial functions while retaining PCI compliance.",
     ],
   },
   {
