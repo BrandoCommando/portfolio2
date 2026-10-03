@@ -61,7 +61,7 @@ export const resumeSummary: string[] = [
 ];
 
 export const resumeEducation: ResumeEducation[] = [
-  { period: "2026", title: "CCSP Certification" }
+  { period: "2026", title: "CCSP Certification" },
   { period: "2024 - 2026", title: "B.S. in Mathematics" },
   { period: "2004", title: "Java Certification" },
 ];
