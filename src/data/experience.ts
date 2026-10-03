@@ -18,13 +18,27 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    company: "FileYourTaxes.com",
+    role: "QA / Development",
+    period: "2026",
+    description: "Assisted development of Tax Software upgrades.",
+    tech: ["Perl", "Rust"],
+    showOnResume: true,
+    resumePeriod: "August 2026 - Current",
+    location: "Ventura, CA",
+    resumeBullets: [
+      "Assisted development of tax software upgrades.",
+      "Found bugs and fixed them.",
+    ],
+  },
+  {
     company: "USPS",
     role: "Carrier",
-    period: "2026",
+    period: "June - July 2026",
     description: "Worked as a carrier for the USPS.",
     tech: ["Driving", "Delivery", "Customer Service", "Scanning", "Sorting"],
     showOnResume: true,
-    resumePeriod: "2026",
+    resumePeriod: "June - July 2026",
     location: "Santa Paula, CA",
     resumeBullets: [
       "Worked as a carrier for the USPS. Driving a delivery truck and delivering mail/packages to customers.",
@@ -33,7 +47,7 @@ export const experiences: Experience[] = [
   {
     company: "FedEx",
     role: "Engineering Consultant",
-    period: "2026",
+    period: "May 2026",
     description:
       "Designed computer vision system to help FedEx package handlers, using YOLO model training to identify objects in real-time video streams. <a href=\"https://github.com/BrandoCommando/rustpackagesim\">Built simulation model</a> to visualize potential productivity improvements.",
     tech: ["Rust", "AI", "Machine Learning", "Python", "YOLO", "SimPy", "PyTorch", "OpenCV"],
@@ -49,8 +63,8 @@ export const experiences: Experience[] = [
   {
     company: "ReadingGlasses.com",
     role: "Head of E-commerce Engineering",
-    period: "2011 — 2026",
-    resumePeriod: "2011 - 2026",
+    period: "2011 — June 2026",
+    resumePeriod: "2011 - June 2026",
     location: "Dallas, TX",
     description:
       "Sole developer responsible for full client support. Led a long-term re-platform to Shopify Plus and Node.js microservices, boosting page speed by 150% and reducing annual maintenance costs by over $500k.",
